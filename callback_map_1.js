@@ -1,6 +1,6 @@
 const nums = [1, 2, 3, 4, 5]
 const double = n => n * 2
-console.log(nums.map(dobro));
+console.log(nums.map(double));
 
 const names = ['Cynthia', 'Amora', 'Pedro', 'Wilson']
 const firstChar = personName => personName[0].toLowerCase()
@@ -9,15 +9,15 @@ console.log(names.map(firstChar));
 console.log(names.map(lastChar));
 
 const cart = [
-  { nome: 'Caneta', qtd: 10, preco: 7.99 },
-  { nome: 'Impressora', qtd: 0, preco: 649.50 },
-  { nome: 'Caderno', qtd: 4, preco: 27.10 },
-  { nome: 'Lápis', qtd: 3, preco: 2.99 },
-  { nome: 'Borracha', qtd: 50, preco: 1.99 },
+  { name: 'Caneta', qty: 10, price: 7.99 },
+  { name: 'Impressora', qty: 0, price: 649.50 },
+  { name: 'Caderno', qty: 4, price: 27.10 },
+  { name: 'Lápis', qty: 3, price: 2.99 },
+  { name: 'Borracha', qty: 50, price: 1.99 },
 ]
 
-const getName = item => item.nome
-console.log(carrinho.map(getName));
+const getName = item => item.name
+console.log(cart.map(getName));
 
-const invetory = item => item.qtd * item.preco
-console.log(carrinho.map(valorEstoque));
+const invetory = item => item.qty * item.price
+console.log(cart.map(invetory));

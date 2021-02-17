@@ -1,13 +1,13 @@
 const cart = [
-  { nome: 'Caneta', qtd: 10, preco: 7.99, sale: 30 },
-  { nome: 'Impressora', qtd: 0, preco: 649.50, sale: 50},
-  { nome: 'Caderno', qtd: 4, preco: 27.10, sale: 0},
-  { nome: 'Lápis', qtd: 3, preco: 2.99, sale: 10 },
-  { nome: 'Borracha', qtd: 50, preco: 1.99, sale: 0 },
+  { name: 'Caneta', qty: 10, price: 7.99, sale: 30 },
+  { name: 'Impressora', qty: 0, price: 649.50, sale: 50},
+  { name: 'Caderno', qty: 4, price: 27.10, sale: 0},
+  { name: 'Lápis', qty: 3, price: 2.99, sale: 10 },
+  { name: 'Borracha', qty: 50, price: 1.99, sale: 0 },
 ]
 
-const getName = item => item.nome
-const greaterThanZero = item => item.qtd > 0
+const getName = item => item.name
+const greaterThanZero = item => item.qty > 0
 const sale = item => item.sale > 0
 const sale30Plus = item => item.sale >= 30
 const validItems = cart.filter(greaterThanZero)
