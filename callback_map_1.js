@@ -1,5 +1,5 @@
 const nums = [1, 2, 3, 4, 5]
-const dobro = n => n * 2
+const double = n => n * 2
 console.log(nums.map(dobro));
 
 const names = ['Cynthia', 'Amora', 'Pedro', 'Wilson']
@@ -8,7 +8,7 @@ const lastChar = personName => personName.substring(personName.length - 1)
 console.log(names.map(firstChar));
 console.log(names.map(lastChar));
 
-const carrinho = [
+const cart = [
   { nome: 'Caneta', qtd: 10, preco: 7.99 },
   { nome: 'Impressora', qtd: 0, preco: 649.50 },
   { nome: 'Caderno', qtd: 4, preco: 27.10 },
@@ -19,5 +19,5 @@ const carrinho = [
 const getName = item => item.nome
 console.log(carrinho.map(getName));
 
-const valorEstoque = item => item.qtd * item.preco
+const invetory = item => item.qtd * item.preco
 console.log(carrinho.map(valorEstoque));
